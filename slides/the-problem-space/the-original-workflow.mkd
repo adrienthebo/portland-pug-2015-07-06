@@ -1,0 +1,16 @@
+### Workflows are hard
+
+Write Puppet code on dev system
+{: .fragment }
+
+???
+{: .fragment }
+
+Code changes available on Puppet master
+{: .fragment }
+
+Run `puppet agent -t`
+{: .fragment }
+
+Profit!
+{: .fragment }

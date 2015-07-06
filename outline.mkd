@@ -1,0 +1,115 @@
+User group presentation - outline
+=================================
+
+Speaker Introductions
+---------------------
+
+  * Adrien Thebo
+  * Software engineer @ Puppet Labs, 2013 - present
+  * Operations engineer @ Puppet Labs, 2011 - 2013
+  * General troublemaker
+
+About the r10k
+--------------
+
+### Manages the code that manages your servers
+
+Solves the "last mile" problem
+
+  * Installs modules into an environment
+    * Does this by way of the Puppetfile Ruby DSL
+  * Creates environments based on VCS
+    * VCS branch -> Puppet environment
+
+### Before r10k
+
+  * Write code on your dev system
+  * ...
+  * ...
+  * ...
+  * `puppet agent -t --environment profit`
+
+### With r10k
+
+  * Write code on your dev system
+  * Commit/push with VCS
+  * r10k run magically triggered
+    * ssh
+    * cron
+    * post-receive hook with zack/r10k
+  * r10k updates your Puppet environments based on VCS
+  * Code is live on your Puppet master
+  * `puppet agent -t --environment profit`
+
+Workflows
+---------
+
+  * Ultimately, r10k is about workflows
+  * Improve how people develop and deploy Puppet code
+
+### Goals
+
+  * Speed up development by reducing time between writing and running code
+  * Isolate changes
+
+### Git workflows
+
+  * Git has a number of existing workflows that work well with Puppet
+
+#### YOLO based development
+
+  * push to production! every time!
+
+#### Feature branches
+
+  * Develop/test feature in topic branch
+  * When ready, merge into production
+
+#### Modified dev/test/prod workflow
+
+  * Develop/test feature in topic branch
+  * When ready, merge into test
+  * Run tests, when pass merge into production
+
+Completing the workflow
+-----------------------
+
+### Holes in the workflow
+
+  * Building a workflow has been left up to the user
+    * Write code
+    * ...
+    * `puppet agent -t`
+  * r10k solved the "last mile" but there are large gaps still
+
+### Knowing when to update
+
+You've written and pushed code - what now?
+
+  * Manual process
+    * `ssh root@puppetmaster.dc1.mysite -t 'r10k deploy environment -pv'`
+  * Cron
+    * Wait 5 minutes, hope code has been updated
+  * zack/r10k webhook
+
+### Rethinking
+
+  * This is the design jam part of this presentation
+  * What do you need for code deployment/remote triggering?
+
+  * mco
+  * HTTP API
+
+### Developing modules
+
+Tracking git branches for Puppet modules is screwy
+
+  * Control repo SHA no longer source of truth for modules as well
+    * Floating module version means ambiguity
+  * Control repos and modules can update independently
+  * Double branching sucks
+  * But being able to track a branch while developing a module is much better than double committing
+
+### Code promotion/canary nodes
+
+

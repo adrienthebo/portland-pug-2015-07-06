@@ -1,0 +1,16 @@
+{
+  "locals": {
+    "title": "The Past, Present, and Future of r10k"
+  },
+  "order": [
+    "introduction/title",
+    "introduction/speaker",
+    "the-problem-space/section-title",
+    "the-problem-space/unsolved-problem",
+    "the-problem-space/the-original-workflow",
+    "early-approaches/section-title",
+    "early-approaches/blog-post-based-deployment",
+    "../outline/20_the_evolution_of_workflows"
+  ]
+}
+

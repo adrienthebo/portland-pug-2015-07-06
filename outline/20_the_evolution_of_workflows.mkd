@@ -1,0 +1,92 @@
+The evolution of workflows
+==========================
+
+r10k is a simple tool that relies on complex ideas
+
+Best viewed in the light of evolving workflows
+
+Evaluation
+----------
+
+  * Playing around with `puppet apply`
+  * Writing and testing single manifests
+  * Behaves remarkably like shell scripts
+
+```
+#!/usr/bin/puppet
+
+notify { "no way!":
+  message => "Executable puppet manifests!"
+}
+```
+
+```
+$ ./executable-manifest.pp
+Notice: Compiled catalog for grey.somethingsinistral.net in environment production in 0.01 seconds
+Notice: Executable puppet manifests!
+Notice: /Stage[main]/Main/Notify[No way]/message: defined 'message' as 'Executable puppet manifests!'
+Notice: Finished catalog run in 0.02 seconds
+```
+
+Ad hoc with `puppet apply`
+------
+
+  * `puppet apply` being used in anger
+  * Puppet code starts as a loose collection of manifests
+  * Manifests eventually coalesce into more discrete modules
+  * Puppet module tool may be used to install modules for dependencies
+
+<!-- Example - puppetlabs-ntpd + profile manifest -->
+
+Centralized Puppet
+------------------
+
+Enough machines and services being managed that it makes sense to build out a
+proper Puppet master and attach Puppet agents
+
+  * Systems are continually managed rather than run-off runs
+  * Code stored in modules, modules contained in environments
+  * Locally developed modules intermixed with modules from the Forge/GitHub
+  * Code is still handed in an ad hoc basis
+
+Managing your Puppet code
+-------------------------
+
+  * Puppet code is like any other code base
+  * Needs to be stored, tracked, versioned
+  * Check the entire codebase into Git!
+
+Checking in code to Git
+-----------------------
+
+```sh
+cd /etc/puppetlabs/puppet/environments/production
+git init
+git checkout -b production
+git add .
+git commit -m 'Initial commit of Puppet modules'
+git remote add origin git@github.com:myorg/puppet-modules
+git push origin production
+```
+
+Managing external modules
+-------------------------
+
+  * It's not practical to include all of your code in a single repository
+    * Modules from the Forge
+    * Modules from GitHub
+    * Submodules are the devil
+
+The Puppetfile
+--------------
+
+  * Declarative way to describe what modules you want installed
+
+```ruby
+mod 'puppetlabs-apache', '1.4.1'
+mod 'saz-ntp'
+mod 'ivaldi-rsnapshot'
+
+mod 'puppet-kafka', :git => 'git://github.com/puppet-community/puppet-kafka'
+mod 'puppet-stash', '1.2.2'
+```

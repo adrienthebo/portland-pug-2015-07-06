@@ -1,0 +1,8 @@
+The Past, Present, and Future of r10k
+=====================================
+
+- - -
+
+Adrien Thebo \| Puppet Labs
+
+@nullfinch

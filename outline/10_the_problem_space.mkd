@@ -1,0 +1,16 @@
+The problem space
+=================
+
+The hole in the workflow
+
+  * Code is written on development systems
+    * Laptops
+    * Bastion hosts
+  * Code is run on puppet masters/production systems
+  * How do we get code from one system to another?
+
+r10k: Puppet code deployment
+
+  * Relies on existing tools for code deployment (Git)
+  * Unifies development and production workflows
+    * Git branches become Puppet environments
