@@ -1,0 +1,16 @@
+### Sharing and Reusing Modules
+
+  * Puppet Forge
+  * GitHub
+  * NSA
+{: .fragment}
+
+<aside class="notes">
+  * There are a lot of great modules out there
+  * Why reinvent the wheel?
+  * You can get modules from all sorts of places
+    * Fragment
+    * Puppet Forge
+    * GitHub
+    * NSA (https://github.com/simp)
+</aside>

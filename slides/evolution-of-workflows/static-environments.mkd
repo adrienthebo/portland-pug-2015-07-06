@@ -1,0 +1,8 @@
+### Static environments
+
+<aside class="notes">
+  * At this point all Puppet code is versioned with Git
+  * But at this point we're using Git like it's SVN
+    * Single master branch, no topic branches
+  * What if we could create Puppet environments for each Git branch?
+</aside>

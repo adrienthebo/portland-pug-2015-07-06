@@ -1,0 +1,7 @@
+## SUCKS
+
+<aside class="notes">
+  * These options suck
+  * These solutions are all improvised and half baked
+  * We can do better
+</aside>

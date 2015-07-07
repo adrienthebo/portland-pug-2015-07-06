@@ -1,0 +1,10 @@
+### The Next Problems
+
+Write --- commit --- ??? --- ??? --- r10k --- agent
+
+<aside class="notes">
+  * r10k solves the very last part of the code management problem
+  * What about the earlier steps?
+  * How does r10k know to run?
+  * What code does r10k deploy?
+</aside>

@@ -1,0 +1,12 @@
+### The Big Picture
+
+<aside class="notes">
+  * We've walked across the entire scale of complexity
+    * Started with a single user and Puppet apply
+    * To a few developers with a few environments
+    * To large scale orgs with hundreds of modules
+  * Different orgs have different needs
+    * All modules stored in the control repo
+    * All modules external via the Puppetfile
+    * Some mix of the two
+</aside>

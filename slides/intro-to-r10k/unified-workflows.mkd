@@ -1,0 +1,7 @@
+### Unified Workflows
+
+<aside class="notes">
+  * r10k marries the concept of Git branches to Puppet environments
+  * Changes to Git branches update the respective Puppet environments
+  * Allows you to use Git best practices while developing
+</aside>

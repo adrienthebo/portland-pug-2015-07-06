@@ -1,0 +1,9 @@
+### Tracking module branches
+
+<aside class="notes">
+  * r10k can track Git branches for Puppetfile module
+  * This adds ambiguity - environment SHA no longer canonical
+    * The Git module version can "float"
+  * Strict pinning is nice, but dev sucks
+  * How can we develop on modules in a non-terrible fashion?
+</aside>

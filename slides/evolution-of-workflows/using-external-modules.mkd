@@ -1,0 +1,11 @@
+### Using External Modules
+
+```ruby
+# Puppetfile
+mod 'puppetlabs-apache', '1.4.1'
+mod 'saz-ntp'
+mod 'ivaldi-rsnapshot'
+
+mod 'puppet-kafka', :git => 'git://github.com/puppet-community/puppet-kafka'
+mod 'puppet-stash', '1.2.2'
+```

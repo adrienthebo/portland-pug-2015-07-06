@@ -1,1 +1,9 @@
 ### Code management is an unsolved problem
+
+<aside class="notes">
+  * Puppet is a driven by manifests, AKA code
+  * For a long time we haven't had a story around that code
+    * How is it stored?
+    * Managed?
+    * Deployed?
+</aside>

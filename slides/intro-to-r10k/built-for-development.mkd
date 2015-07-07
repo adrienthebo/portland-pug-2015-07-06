@@ -1,0 +1,8 @@
+### Built for development
+
+<aside class="notes">
+  * r10k is built to make it easy to author code
+  * Fetches environment and module code from Git
+  * This lets you write Puppet code like any other language
+  * Bonus points - using Git makes r10k _fast_
+</aside>

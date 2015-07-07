@@ -1,0 +1,19 @@
+And Now for Something Completely Different
+
+Executable Manifests!
+
+```
+#!/usr/bin/puppet apply
+
+notify { "no way!":
+  message => "Executable puppet manifests!"
+}
+```
+
+```
+$ ./executable-manifest.pp
+Notice: Compiled catalog for grey.somethingsinistral.net in environment production in 0.01 seconds
+Notice: Executable puppet manifests!
+Notice: /Stage[main]/Main/Notify[No way]/message: defined 'message' as 'Executable puppet manifests!'
+Notice: Finished catalog run in 0.02 seconds
+```

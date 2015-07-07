@@ -1,0 +1,9 @@
+### Creating artifacts
+
+<aside class="notes">
+  * We've always assumed that people develop and push with Git
+  * This precludes the creation of artifacts
+  * Throw out the Git assumption
+    * What if we created artifacts for environments?
+    * CI pipelines, archiving, etc
+</aside>

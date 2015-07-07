@@ -1,0 +1,22 @@
+### Adding r10k
+
+```
+# r10k deploy environment -pv
+INFO     -> Deploying environment /etc/puppetlabs/puppet/environments/ad_hoc_repo_box
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/activemq
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/alternatives
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/apt
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/aws
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/boolean
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/collectd
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/drush
+INFO     -> Deploying module /etc/puppetlabs/puppet/environments/ad_hoc_repo_box/modules/dujour
+```
+
+<aside class="notes">
+  * This is where r10k comes in
+  * Creating environments on the fly adds complexity
+  * r10k provides the necessary tooling to make this easy
+    * Think about Git branches and workflows, ignore the tooling
+    * Throw away your shell scripts
+</aside>

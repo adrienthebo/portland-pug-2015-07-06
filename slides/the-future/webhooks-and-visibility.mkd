@@ -1,0 +1,10 @@
+### Webhooks and visibility
+
+<aside class="notes">
+  * post-receive webhooks are popular for running r10k
+  * With GitHub et al all there is _zero visibility_
+  * How do you know your code is live?
+
+  * Ideas
+  * HTTP service to trigger/monitor deploys
+</aside>

@@ -1,0 +1,17 @@
+Evaluation
+----------
+
+```
+puppet apply -e 'notice("hello world!")'
+```
+
+<aside class="notes">
+  * Getting started with puppet
+  * Playing around with `puppet apply`
+  * Writing and testing single manifests
+  * Behaves remarkably like shell scripts
+
+#### Requirements
+
+  * You can run your code...?
+</aside>

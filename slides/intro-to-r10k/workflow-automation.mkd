@@ -1,0 +1,6 @@
+### Workflow automation
+
+<aside class="notes">
+  * r10k is built to automate how code is deployed
+  * Provides a basis for you to build efficient workflows
+</aside>

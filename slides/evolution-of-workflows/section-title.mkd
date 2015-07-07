@@ -1,0 +1,8 @@
+The Evolution of Workflows
+==========================
+
+<aside class="notes">
+  * r10k is a simple tool
+  * Built on complex ideas and workflows
+  * Best understood through the lens of evolving requirements
+</aside>

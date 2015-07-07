@@ -1,0 +1,18 @@
+Centralized Puppet
+------------------
+
+```
+puppet agent -t --server puppet.mysite.internal'
+```
+
+<aside class="notes">
+
+Enough machines and services being managed that it makes sense to build out a
+proper Puppet master and attach Puppet agents
+
+  * Systems are continually managed rather than run-off runs
+  * Code stored in modules, modules contained in environments
+  * Locally developed modules intermixed with modules from the Forge/GitHub
+  * Code is still handed in an ad hoc basis
+
+</aside>

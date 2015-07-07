@@ -1,2 +1,10 @@
 Early approaches
-----------------
+================
+
+<aside class="notes">
+  * There have been some incremental approaches to code management
+  * Generally fairly ad hoc
+    * Blog posts
+    * Shell scripts
+    * One offs
+</aside>

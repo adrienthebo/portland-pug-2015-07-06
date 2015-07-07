@@ -1,0 +1,13 @@
+Ad hoc with puppet apply
+------
+
+```
+puppet apply -e 'include mysite_ntp'
+```
+
+<aside class="notes">
+  * `puppet apply` being used in anger
+  * Puppet code starts as a loose collection of manifests
+  * Manifests eventually coalesce into more discrete modules
+  * Puppet module tool may be used to install modules for dependencies
+</aside>

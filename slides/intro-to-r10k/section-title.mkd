@@ -1,0 +1,10 @@
+An Introduction to r10k
+-----------------------
+
+<aside class="notes">
+  * r10k is meant to be that better way to manage Puppet code
+  * builds on existing best practices and workflows
+  * simple tool based on complex ideas and workflows
+  * first we'll talk about the general overview
+  * then go into the history
+</aside>

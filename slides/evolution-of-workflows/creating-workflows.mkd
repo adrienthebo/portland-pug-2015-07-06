@@ -1,0 +1,24 @@
+### Creating workflows
+
+YOLO based development
+{: .fragment }
+
+Feature branches
+{: .fragment }
+
+Modified development/test/production flow
+{: .fragment }
+
+<aside class="notes">
+  * Easy environment creation enables workflows
+
+  * YOLO based development
+    * push to production! every time!
+  * Feature branches
+    * Develop/test feature in topic branch
+    * When ready, merge into production
+  * Modified dev/test/prod workflow
+    * Develop/test feature in topic branch
+    * When ready, merge into test
+    * Run tests, when pass merge into production
+</aside>

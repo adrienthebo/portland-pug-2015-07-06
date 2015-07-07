@@ -1,0 +1,9 @@
+### Running r10k
+
+<aside class="notes">
+  * Current approach to running r10k is to run it manually
+  * This doesn't scale
+  * No consideration of auth
+
+  * What should cause r10k to run?
+</aside>

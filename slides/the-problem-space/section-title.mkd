@@ -1,2 +1,8 @@
 The Problem Space
 =================
+
+<aside class="notes">
+  * This presentation is about r10k
+  * r10k is just a tool meant to solve a problem
+  * What's the problem?
+</aside>

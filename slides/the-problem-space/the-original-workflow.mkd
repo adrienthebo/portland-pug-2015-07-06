@@ -14,3 +14,15 @@ Run `puppet agent -t`
 
 Profit!
 {: .fragment }
+
+<aside class="notes">
+
+**NOTE: FRAGMENTS**
+
+  * Write code
+  * Magic!
+  * Code is on master
+  * Run puppet agent
+  * profit!
+
+</aside>

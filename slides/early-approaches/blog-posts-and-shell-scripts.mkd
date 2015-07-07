@@ -1,0 +1,29 @@
+### Blog posts and shell scripts
+
+```
+#!/bin/sh
+read oldrev newrev refname
+
+REPO="git@github.com:my-org/puppet-environments.git"
+BRANCH=`echo $refname | sed -n 's/^refs\/heads\///p'`
+BRANCH_DIR="/etc/puppetlabs/puppet/environments"
+
+if [ "$newrev" -eq 0 ] 2> /dev/null ; then
+  cd $BRANCH_DIR && rm -rf $BRANCH
+else
+    { cd $BRANCH_DIR/$BRANCH && git pull origin $BRANCH ; } \
+    || { mkdir -p $BRANCH_DIR && cd $BRANCH_DIR \
+         && git clone $REPO $BRANCH && cd $BRANCH \
+         && git checkout -b $BRANCH origin/$BRANCH ; }
+fi
+```
+
+<aside class="notes">
+  * This is (more or less) the spiritual ancestor of r10k
+  * post-receive hook, allowing for some advanced environment creation
+  * Take it, hack it up
+  * You too can rewrite shell scripts
+  * Again!
+  * And again!
+  * And again!
+</aside>

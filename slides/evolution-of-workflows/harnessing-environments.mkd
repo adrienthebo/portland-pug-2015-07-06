@@ -1,0 +1,11 @@
+### Harnessing environments
+
+<aside class="notes">
+  * Easy for me to take this for granted
+  * This is actually incredibly powerful
+  * Instantly gain isolation in changes
+  * Safe to try things
+    * Disposable boxes
+    * `--noop`
+    * Canary nodes
+</aside>

@@ -1,2 +1,10 @@
-Blog post based deployment
---------------------------
+### Blog post based deployment
+
+<aside class="notes">
+  * Code deployment done entirely through convention
+  * Discussed in blog posts with examples
+    * post-receive hooks
+    * deploy shell scripts
+  * Write your own shell script
+  * Every. Single. Time.
+</aside>

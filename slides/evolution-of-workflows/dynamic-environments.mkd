@@ -1,0 +1,18 @@
+### Dynamic environments
+
+```
+# git branch -r
+upstream/add_mysql_error_logs
+upstream/allow_function_number
+upstream/backuprefactor
+[etc]
+```
+
+```
+# tree -L 1 /etc/puppetlabs/puppet/environments
+/etc/puppetlabs/puppet/environments
+├── add_mysql_error_logs
+├── allow_function_number
+└── backuprefactor
+[etc]
+```

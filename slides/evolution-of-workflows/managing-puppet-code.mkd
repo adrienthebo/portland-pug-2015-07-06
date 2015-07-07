@@ -1,0 +1,9 @@
+Managing your Puppet code
+-------------------------
+
+<aside class="notes">
+  * Puppet code is like any other code base
+  * Needs to be stored, tracked, versioned
+  * Until this point we've been editing files on a live master
+  * This is not ideal
+</aside>

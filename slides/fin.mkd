@@ -1,0 +1,8 @@
+FIN
+===
+
+![pangolin](images/pangolin.gif)
+
+<aside class="notes">
+**Press (b) to blank slides**
+</aside>

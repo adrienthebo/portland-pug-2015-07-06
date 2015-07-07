@@ -1,0 +1,18 @@
+### Versioning with Git
+
+```sh
+cd /etc/puppetlabs/puppet/environments/production
+git init
+git checkout -b production
+git add .
+git commit -m 'Initial commit of Puppet modules'
+git remote add origin git@github.com:myorg/puppet-modules
+git push origin production
+```
+
+<aside class="notes">
+  * Solution!
+  * Check everything into git!
+  * Edit/commit/push on dev system
+  * Pull onto live master when ready
+</aside>

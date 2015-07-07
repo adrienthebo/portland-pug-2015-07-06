@@ -1,5 +1,5 @@
 guard :shell do
-  watch(/slides/) do |m|
+  watch(/^(slides|css)/) do |m|
     [
       "bundle exec rev-present"
     ].each do |cmd|
